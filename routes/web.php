@@ -56,4 +56,8 @@ Route::get('/document', function () {
     return storage::download('September_news_bulletin.pdf');
 })->name('september_news_bulletin');
 
+Route::get('/news_insert', function () {
+    return storage::download('insert_news');
+})->name('insert_news');
+
 require __DIR__.'/auth.php';
