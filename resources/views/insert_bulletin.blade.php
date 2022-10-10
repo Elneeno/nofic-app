@@ -7,26 +7,24 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>News Form</h2>
+          <h2>Upload News Bulletin</h2>
         </div>
 
         <div class="row">
 
           <div class="col-lg mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="#" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Title</label>
-                  <input type="text" name="title" class="form-control" id="title" required>
+                  <input type="text" name="name" class="form-control" id="name" required>
                 </div>
+                
               </div>
+              
               <div class="form-group mt-3">
-                <label for="name">News Content</label>
-                <textarea class="form-control" name="news_content" rows="10" required></textarea>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Pictures</label>
-                <input type="file" class="form-control" name="pictures" id="pictures" required>
+                <label for="name">Upload File</label>
+                 <input type="file" name="name" class="form-control" id="name" required>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
