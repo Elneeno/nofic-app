@@ -5,8 +5,6 @@ use Illuminate\Support\Facades\Storage;
 
 use App\Http\Controllers\bulletin;
 use App\Http\Controllers\news;
-use App\Models\bulletin;
-use App\Models\news;
 
 /*
 |--------------------------------------------------------------------------
