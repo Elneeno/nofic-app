@@ -3,10 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 
-use App\Http\Controllers\bulletin;
+use App\Http\Controllers\BulletinController;
 use App\Http\Controllers\news;
-use App\Models\bulletin;
-use App\Models\news;
+#use App\Models\bulletin;
+#use App\Models\news;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,11 +22,6 @@ use App\Models\news;
 Route::get('/', function () {
     return view('index');
 })->name('home');
-
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
 
 Route::get('/about', function () {
@@ -57,21 +52,31 @@ Route::get('/about_fistula', function () {
     return view('about_fistula');
 })->name('about_fistula');
 
+Route::get('/documents', [BulletinController::class, 'index']);
+
+// ADMIN Pages
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
 Route::get('/news_insert', function () {
     return view('news_insert');
 })->name('news_insert');
 
-Route::get('/insert_bulletin', function () {
-    return view('insert_bulletin');
-})->name('insert_bulletin');
 
 Route::get('/news_home', function () {
     return view('news_home');
 })->name('news_home');
 
+// Bulletin
+Route::resource('bulletin', BulletinController::class);
 
-Route::get('/document', function () {
-    return storage::download('September_news_bulletin.pdf');
-})->name('september_news_bulletin');
+Route::get('/insert_bulletin', function () {
+    return view('insert_bulletin');
+})->name('insert_bulletin');
+
+
 
 require __DIR__.'/auth.php';

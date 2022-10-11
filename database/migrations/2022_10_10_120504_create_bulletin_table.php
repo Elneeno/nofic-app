@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('bulletin', function (Blueprint $table) {
             $table->id();
-            $table->date('date');
+            $table->string('date');
             $table->text('title');
             $table->string('pdf')->nullable();
             $table->timestamps();
