@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('date');
             $table->text('title');
+            $table->string('pdf');
             $table->timestamps();
         });
     }

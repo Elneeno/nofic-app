@@ -79,6 +79,8 @@ Route::get('/insert_bulletin', function () {
     return view('insert_bulletin');
 })->name('insert_bulletin');
 
-
+Route::get('/x', function () {
+    return view('x');
+})->name('x');
 
 require __DIR__.'/auth.php';

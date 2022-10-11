@@ -168,7 +168,7 @@
       <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-medical-sign"></i> Family Medicine</div>
       <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-woman-in-glasses"></i> Gynaecology</div>       
       <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-surgeon"></i> Surgery</div>
-      <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-businesswoman"></i> Uroganaecology</div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-businesswoman"></i> Urogynaecology</div>
       <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-look"></i> Others</div>
 
     </div>
