@@ -13,15 +13,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="{{URL::to('/')}}/assets/img/slide/slide-4.jpg" alt="">
+                  <img src="{{URL::to('/')}}/assets/img/img/slide-4.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="{{URL::to('/')}}/assets/img/slide/1.jpg" alt="">
+                  <img src="{{URL::to('/')}}/assets/img/img/1.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="{{URL::to('/')}}/assets/img/slide/2.jpg" alt="">
+                  <img src="{{URL::to('/')}}/assets/img/img/2.jpg" alt="">
                 </div>
 
               </div>

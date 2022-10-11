@@ -11,7 +11,7 @@
       </div>
      <div class="row">
       <div class="col-lg-5 order-1 order-lg-1">
-        <img src="{{URL::to('/')}}/assets/img/slide/2.jpg" class="img-fluid" alt="">
+        <img src="{{URL::to('/')}}/assets/img/img/2.jpg" class="img-fluid" alt="">
       </div>
       <div class="col-lg-7 pt-4 pt-lg-0 order-2 order-lg-2 content">
         <h4><strong></strong></h4>

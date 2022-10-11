@@ -18,7 +18,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Kano Road, Former State Hotel Ningi, Bauchi State</p>
+                <p>Kano Road, Ningi, Bauchi State.</p>
               </div>
 
               <div class="email">
@@ -30,7 +30,7 @@
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+23480 0000 0000</p>
+                <p>+23480 2904 3746</p>
               </div>
 
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.698864841455!2d9.569473314622575!3d11.061188956897844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ab0ce6b78775e5%3A0xddd923483add3883!2sNational%20Obstetrics%20Fistula%20Centre!5e0!3m2!1sen!2sng!4v1615810038415!5m2!1sen!2sng" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>

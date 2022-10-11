@@ -11,7 +11,7 @@
     </div>
     <div class="row">
       <div class="col-lg-6 order-1 order-lg-2"><br>
-        <img src="{{URL::to('/')}}/assets/img/slide/gate.png" class="img-fluid" alt="">
+        <img src="{{URL::to('/')}}/assets/img/img/gate.png" class="img-fluid" alt="">
       </div>
       <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
         <h4><strong>NOFIC NINGI</strong></h4>

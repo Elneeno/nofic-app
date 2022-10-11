@@ -14,7 +14,7 @@
         <img src="{{URL::to('/')}}/assets/img/team/md2.png" class="img-fluid" alt="" height="400" width="500">
       </div>
       <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content"><br><br>
-        <strong><h4>Dr. Halima Mukaddas</h4>MBBS, FWACS, FICS, MPH, PHD</strong>
+        <strong><h4>Dr. Halima Mukaddas</h4></strong><i>MBBS, FWACS, FICS, MPH, PHD</i>
         <br><br><ul>
           <li>Dr Halima Mukaddas is a trained obstetrician Gynaecologist from the West Africa College of Surgeons. She graduated with MBBS from the prestigious Ahmadu Bello University Zaria in 1998. She possesses an MPH from the University of Liverpool and a PHD in Public Health from American Texila University Nicaragua. </li>
 
