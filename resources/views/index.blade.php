@@ -15,7 +15,7 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">National Obstetric Fistula Centre Ningi,<br/>Bauchi State</h2>
-              <p class="animate__animated animate__fadeInUp">The North-East Regional Centre for prevesion, treatment, rehabilitation, training and research on Vesico Vaginal Fistula.</p>
+              <p class="animate__animated animate__fadeInUp">The North-East Regional Centre for Prevesion, Treatment, Rehabilitation, Training and Research on Vesico Vaginal Fistula.</p>
               <a href="{{ route('about') }}" class="btn-get-started animate__animated animate__fadeInUp scrollto">About Us</a>
             </div>
           </div>
@@ -26,19 +26,19 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Mission</h2>
-              <p class="animate__animated animate__fadeInUp"> To advance the Health of Women and Family through outstanding education, research and Clinical Centre</p>
+              <p class="animate__animated animate__fadeInUp"> To Advance the Health of Women and Family through Outstanding Education, Research and Clinical Centre</p>
               <!--<a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>-->
             </div>
           </div>
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url('/assets/img/slide/slide-5.jpg')">
+        <div class="carousel-item" style="background-image: url('/assets/img/slide/slider32.jpg')">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Vision</h2>
-              <p class="animate__animated animate__fadeInUp">We aspire to be one of the Nation's leading Uroganaecological Centre</p>
-              <a href="#why?" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <p class="animate__animated animate__fadeInUp">We aspire to be one of the Nation's Leading Uroganaecological Centre</p>
+              <a href="{{ route('about') }}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
           </div>
         </div>
@@ -186,9 +186,9 @@
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
               <div class="icon"><img src="img/slide/slide.jpg" alt="" class="img-fluid"></div>
-              <h4 class="title"><a href="">The managing diresctor met with members of staff</a></h4>
+              <h4 class="title"><a href="">The managing director met with members of staff</a></h4>
               <p class="description">She met with the staff of the centre</p>
-              <a href="#">More...</a>
+              <a href="{{ route('news_item') }}">More...</a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
@@ -196,7 +196,7 @@
               <div class="icon"><img src="img/slide/slide.jpg" alt="" class="img-fluid"></div>
               <h4 class="title"><a href="">The managing director met with members of staff</a></h4>
               <p class="description">She met with the staff of the centre</p>
-              <a href="#">More...</a>
+              <a href="{{ route('news_item') }}">More...</a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
@@ -204,7 +204,7 @@
               <div class="icon"><img src="img/slide/slide.jpg" alt="" class="img-fluid"></div>
               <h4 class="title"><a href="">The managing diresctor met with members of staff</a></h4>
               <p class="description">She met with the staff of the centre</p>
-              <a href="#">More...</a>
+              <a href="{{ route('news_item') }}">More...</a>
             </div>
           </div>
         </div>

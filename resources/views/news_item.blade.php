@@ -17,11 +17,11 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="{{URL::to('/')}}/assets/img/slide/slide-6.jpg" alt="">
+                  <img src="{{URL::to('/')}}/assets/img/slide/1.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="{{URL::to('/')}}/assets/img/slide/slide-5.jpg" alt="">
+                  <img src="{{URL::to('/')}}/assets/img/slide/2.jpg" alt="">
                 </div>
 
               </div>
@@ -35,9 +35,12 @@
               <p>Dr. Halima Mukaddas celebrates 100 as the MD National Obstetrics Fistula Centre Ningi. The MD marked the event with unveiling of the new GOPD department, launching of a staff bus and gradution of 1oo beneficiaries of free fistula treatment. The beneficiaries also went through a rehabilitation exercise that includes skills acquisition training. </p>
             </div>
           </div>
-
         </div>
-
+  <div class="container">
+    <p></p>
+    <p></p>
+    <p></p>
+   </div>
       </div>
     </section><!-- End Portfolio Details Section -->
 
