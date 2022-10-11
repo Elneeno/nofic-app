@@ -42,7 +42,7 @@
           <link href="{{URL::to('/')}}/assets/css/icofont.css" rel="stylesheet">
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        
     </head>
     <body>
     
@@ -89,7 +89,7 @@
   <script src="{{URL::to('/')}}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="{{URL::to('/')}}/assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="{{URL::to('/')}}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="{{URL::to('/')}}/assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{URL::to('/')}}/assets/vendor/php-email-form/valiate.js"></script>
   <script src="{{URL::to('/')}}/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->

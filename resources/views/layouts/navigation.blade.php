@@ -15,7 +15,7 @@
                 <li><a href="{{ route('gallery') }}">Gallery</a></li>
               <li class="dropdown"><a href="#"><span>Publications</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="">Monthly Bulletin</a></li>
+                  <li><a href="{{ url('/documents') }}">Monthly Bulletin</a></li>
                 </ul>
               </li>
             </ul>

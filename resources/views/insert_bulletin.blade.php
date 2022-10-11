@@ -13,18 +13,25 @@
         <div class="row">
 
           <div class="col-lg mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="{{ route('bulletin.store'); }}" method="post"  enctype="multipart/form-data" role="form" class="php-email-form">
+              @csrf
               <div class="row">
+
                 <div class="form-group col-md-6">
                   <label for="name">Title</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <input type="text" name="title" class="form-control" id="title" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="name">Date</label>
+                  <input type="month" min="2014-01" name="date" class="form-control" id="date" required>
                 </div>
                 
               </div>
               
               <div class="form-group mt-3">
                 <label for="name">Upload File</label>
-                 <input type="file" name="name" class="form-control" id="name" required>
+                 <input type="file" name="document" class="form-control" id="document" required>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
