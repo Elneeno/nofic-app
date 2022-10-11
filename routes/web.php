@@ -52,7 +52,10 @@ Route::get('/about_fistula', function () {
     return view('about_fistula');
 })->name('about_fistula');
 
-Route::get('/documents', [BulletinController::class, 'index']);
+Route::get('/documents', function () {
+    return view('bulletin_list');
+})->name('documents');
+
 
 // ADMIN Pages
 
