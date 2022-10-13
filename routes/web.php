@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 
 use App\Http\Controllers\BulletinController;
-use App\Http\Controllers\news;
+use App\Http\Controllers\NewsController;
 
 
 /*
@@ -63,9 +63,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/news_insert', function () {
-    return view('news_insert');
-})->name('news_insert');
+
 
 
 Route::get('/news_home', function () {
@@ -74,10 +72,8 @@ Route::get('/news_home', function () {
 
 // Bulletin
 Route::resource('bulletin', BulletinController::class);
-
-Route::get('/insert_bulletin', function () {
-    return view('insert_bulletin');
-})->name('insert_bulletin');
+// News
+Route::resource('news', NewsController::class);
 
 Route::get('/x', function () {
     return view('x');
