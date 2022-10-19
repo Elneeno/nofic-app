@@ -13,20 +13,32 @@
         <div class="row">
 
           <div class="col-lg mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="#" method="post" role="form" class="php-email-form">
+            <form action="{{ route('news.store') }}" method="post" role="form" enctype="multipart/form-data" class="php-email-form">
+              @csrf
               <div class="row">
-                <div class="form-group col-md-6">
+               <div class="form-group col-md-6">
                   <label for="name">Title</label>
                   <input type="text" name="title" class="form-control" id="title" required>
                 </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Date</label>
+                  <input type="date" name="date" class="form-control" id="date" required>
+                </div>  
+                
               </div>
+
+              <div class="form-group col-md-12">
+                  <label for="name">Headline</label>
+                  <input type="text" name="headline" class="form-control" id="headline" required>
+                </div>
+
               <div class="form-group mt-3">
                 <label for="name">News Content</label>
                 <textarea class="form-control" name="news_content" rows="10" required></textarea>
               </div>
               <div class="form-group mt-3">
-                <label for="name">Pictures</label>
-                <input type="file" class="form-control" name="pictures" id="pictures" required>
+                <label for="name">Pictures (Choose Multiple)</label>
+                <input type="file" class="form-control" name="pictures[]" id="pictures" required multiple >
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
