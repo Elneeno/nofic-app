@@ -2,6 +2,11 @@
 
 @section('content')
 
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>Bulletin</h2>
+    </div>
 @if (session('message'))
     <div class="alert alert-info text-center">
         {{ session('message') }}
@@ -9,7 +14,7 @@
 @endif
 
 <table class="table">
-    <b>Bulletin List Here</b> <a href="{{ route('bulletin.create') }}">New Bulletin</a>
+    <strong>Bulletin List </strong> | <a href="{{ route('bulletin.create') }}">New Bulletin</a>
     <thhead> 
         <th>S/N</th>
         <th>Document</th>
@@ -28,4 +33,7 @@
     </tr>
     @endforeach
 </table>
+
+</div>
+</section>
 @endsection

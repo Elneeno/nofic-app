@@ -162,13 +162,14 @@
 
     <div class="row" id="specialities-flters">
       <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-businesswoman"></i> Obstetrics</div>
-      <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-medical-sign-alt"></i> General practice</div>
       <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-medicine"></i> Internal Medicine</div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-medical-sign-alt"></i> General practice</div>
       <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-children-care"></i> Paediatrics</div>
       <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-medical-sign"></i> Family Medicine</div>
-      <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-woman-in-glasses"></i> Gynaecology</div>       
+      <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-woman-in-glasses"></i> Gynaecology</div> 
       <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-surgeon"></i> Surgery</div>
       <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-businesswoman"></i> Urogynaecology</div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-medicine"></i>NHIS</div>
       <div class="col-lg-2 col-md-4 col-sm-6"><i class="icofont-look"></i> Others</div>
 
     </div>

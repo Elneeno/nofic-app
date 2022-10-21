@@ -64,11 +64,14 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
-
+Route::get('/news_insert', function () {
+    return view('news_insert');
+})->name('news_insert');
 
 Route::get('/news_home', function () {
     return view('news_home');
 })->name('news_home');
+
 
 // Bulletin
 Route::resource('bulletin', BulletinController::class);

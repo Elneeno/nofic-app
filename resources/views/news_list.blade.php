@@ -2,8 +2,12 @@
 
 @section('content')
 
-
-<b>News List</b> | <a href="{{ route('news.create') }}">Create News</a>
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>News</h2>
+    </div>
+<strong>News List</strong> | <a href="{{ route('news.create') }}">Create News</a>
 <table class="table">
     <thead>
         <th>S/N</th>
@@ -22,5 +26,6 @@
         @endforeach
     </tbody>
 </table>
-
+</div>
+</section
 @endsection
