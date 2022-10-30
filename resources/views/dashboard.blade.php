@@ -15,8 +15,9 @@
          <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
            <h3><strong>Menu</strong></h3>
-          <div class="email"><a href="{{ route('news.index') }}">News</a></div><br>
+          <div class="email"><a href="{{ route('news.index') }}">News</a></div>
           <div class="phone"><a href="{{ route('bulletin.index') }}">Bulletin</a></div>
+          <div class="email"><a href="{{ route('register') }}">Users</a></div>
           </div>
           </div>
         </div>
