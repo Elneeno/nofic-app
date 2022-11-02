@@ -17,7 +17,7 @@
            <h3><strong>Menu</strong></h3>
           <div class="email"><a href="{{ route('news.index') }}">News</a></div>
           <div class="phone"><a href="{{ route('bulletin.index') }}">Bulletin</a></div>
-          <div class="email"><a href="{{ route('register') }}">Users</a></div>
+          <div class="email"><a href="">Users</a></div>
           </div>
           </div>
         </div>

@@ -17,7 +17,6 @@ use App\Http\Controllers\NewsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('index');
 })->name('home');
@@ -71,6 +70,7 @@ Route::get('/news_insert', function () {
 Route::get('/news_home', function () {
     return view('news_home');
 })->name('news_home');
+
 
 
 // Bulletin

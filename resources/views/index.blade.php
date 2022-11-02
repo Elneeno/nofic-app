@@ -11,7 +11,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url('/assets/img/slide/slide.jpg')">
+        <div class="carousel-item active" style="background-image: url('/assets/img/slide/gate.jpg')">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">National Obstetric Fistula Centre Ningi,<br/>Bauchi State</h2>
@@ -22,7 +22,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url('/assets/img/slide/ssff.jpg')">
+        <div class="carousel-item" style="background-image: url('/assets/img/slide/slide.jpg')">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Mission</h2>

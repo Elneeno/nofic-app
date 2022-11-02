@@ -12,7 +12,7 @@
         {{ session('message') }}
     </div>
 @endif
-
+  
 <table class="table">
     <strong>Bulletin List </strong> | <a href="{{ route('bulletin.create') }}">New Bulletin</a>
     <thhead> 
@@ -22,13 +22,17 @@
         <th>Action</th>
     </thead>
     @foreach($data as $bulletin)
+    <form action="{{route('bulletin.destroy', $bulletin->id); }}" method="post" role="form">
     <tr>
         <td>{{$loop->iteration}}</td>
-        <td> <a href="{{ asset('bulletins/'. $bulletin->pdf) }}" target="_blank"> {{ $bulletin->title }} </a> </td>
+        <td> <a href="{{ asset('bulletins/'. $bulletin->pdf) }}" target="_blank"> {{ $bulletin->title }}</a> </td>
         <td>{{ date('M-Y', strtotime($bulletin->date)) }}</td>
         <td>
             <a href="{{ asset('bulletins/'. $bulletin->pdf) }}" target="_blank"> Open </a> |
-            <a href="#">Delete</a>
+            @csrf    
+            @method('DELETE')
+            <button type="button" class="btn btn-outline-success" name="delete" onclick="confirm('Confirm Delete. This action cannot be undone!')">Delete</button>
+        </form>
         </td>
     </tr>
     @endforeach
