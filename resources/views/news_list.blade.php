@@ -17,11 +17,14 @@
     </thead>
     <tbody>
         @foreach($news as $item)
+        <form action="" method="post" role="form">
         <tr>
             <td>{{$loop->iteration}}</td>
             <td> <a href="{{route('news.show', $item->id) }}"> {{$item->title}} </a> </td>
             <td>{{date('d M, Y', strtotime($item->date))}}</td>
-            <td>Edit | Delete</td>
+            <td>Edit | 
+            <button type="button" class="btn btn-outline-success" name="delete" onclick="confirm('Confirm Delete. This action cannot be undone!')">Delete</button></td>
+             </form>
         </tr>
         @endforeach
     </tbody>
