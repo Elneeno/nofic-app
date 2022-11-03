@@ -19,6 +19,7 @@ use App\Http\Controllers\NewsController;
 */
 Route::get('/', function () {
     return view('index');
+    $bulletin = bulletin::all();
 })->name('home');
 
 
