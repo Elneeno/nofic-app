@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 
 @section('content')
 
@@ -30,8 +30,8 @@
         <td>
             <a href="{{ asset('bulletins/'. $bulletin->pdf) }}" target="_blank"> Open </a> |
             @csrf    
-            @method('DELETE')
-            <button type="button" class="btn btn-outline-success" name="delete" onclick="confirm('Confirm Delete. This action cannot be undone!')">Delete</button>
+            @method('DELETE') 
+            <button type="submit" class="btn btn-outline-success" name="delete" onclick="confirm('Are you sure you want to Delete. This action cannot be undone!')">Delete</button>
         </form>
         </td>
     </tr>
@@ -39,5 +39,5 @@
 </table>
 
 </div>
-</section>
+</section> 
 @endsection

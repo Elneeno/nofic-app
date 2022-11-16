@@ -13,19 +13,18 @@
             <ul>
               <li><a href="{{ route('news_home') }}">News</a></li>
                 <li><a href="{{ route('gallery') }}">Gallery</a></li>
-              <li class="dropdown"><a href="#"><span>Publications</span> <i class="bi bi-chevron-right"></i></a>
-                
+              <li class="dropdown"><a href="#"><span>Bulletins</span> <i class="bi bi-chevron-right"></i></a>
+                @foreach($bulletin as $pub)
                 <ul>
-                  <li><a href="" target="_blank"> </a> </li>
+                  <li><a href="{{ asset('bulletins/'. $pub->pdf) }}" target="_blank">{{$pub->title}}</a> </li>
                 </ul>
-                
+                @endforeach
               </li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="{{ route('contact') }}">Contact Us</a></li>
             <li><b><a class="nav-link" href="{{ route('login') }}"><span class="icofont-ui-lock">&nbsp;Login</span> </a>
             </b></li>
-            <li><a class="nav-link" href=""><span class="icofont-logout">&nbsp;Logout</span> </a></li>
            
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

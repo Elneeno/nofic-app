@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 
 @section('content')
 <section id="contact" class="contact">
@@ -6,7 +6,7 @@
 <div class="section-title">
       <h2>Dashboard</h2>
     </div>
- <div class="row"> <h3 align=""><strong>Welcome, Admin</strong></h3>
+ <div class="row"> <h3 align=""><strong>Welcome, {{$user->name}}</strong></h3>
    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
       <div class="info">
          <img src="{{URL::to('/')}}/assets/img/admin.png" class="img-fluid" alt="" height="150" width="150"> 
