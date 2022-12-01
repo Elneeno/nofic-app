@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\BulletinController;
 use App\Http\Controllers\NewsController;
 
+use App\Models\Bulletin;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,42 +19,50 @@ use App\Http\Controllers\NewsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('index');
+    $bulletin = Bulletin::all();
+    return view('index', ['bulletin'=>$bulletin]);
 })->name('home');
 
 
 Route::get('/about', function () {
-    return view('about');
+    $bulletin = Bulletin::all();
+    return view('about',['bulletin'=>$bulletin]);
 })->name('about');
 
 Route::get('/about_md', function () {
-    return view('about_md');
+    $bulletin = Bulletin::all();
+    return view('about_md',['bulletin'=>$bulletin]);
 })->name('about_md');
 
 Route::get('/contact', function () {
-    return view('contact');
+    $bulletin = Bulletin::all();
+    return view('contact',['bulletin'=>$bulletin]);
 })->name('contact');
 
 Route::get('/gallery', function () {
-    return view('gallery');
+    $bulletin = Bulletin::all();
+    return view('gallery',['bulletin'=>$bulletin]);
 })->name('gallery');
 
 Route::get('/news', function () {
-    return view('news');
+    $bulletin = Bulletin::all();
+    return view('news',['bulletin'=>$bulletin]);
 })->name('news');
 
 Route::get('/news_item', function () {
-    return view('news_item');
+    $bulletin = Bulletin::all();
+    return view('news_item',['bulletin'=>$bulletin]);
 })->name('news_item');
 
 Route::get('/about_fistula', function () {
-    return view('about_fistula');
+    $bulletin = Bulletin::all();
+    return view('about_fistula',['bulletin'=>$bulletin]);
 })->name('about_fistula');
 
 Route::get('/documents', function () {
-    return view('bulletin_list');
+    $bulletin = Bulletin::all();
+    return view('bulletin_list',['bulletin'=>$bulletin]);
 })->name('documents');
 
 
@@ -60,15 +70,23 @@ Route::get('/documents', function () {
 
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $bulletin = Bulletin::all();
+    $user = Auth::user();
+    return view('dashboard',['bulletin'=>$bulletin, 'user'=>$user]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
-
+Route::get('/news_insert', function () {
+    $bulletin = Bulletin::all();
+    return view('news_insert',['bulletin'=>$bulletin]);
+})->name('news_insert');
 
 Route::get('/news_home', function () {
-    return view('news_home');
+    $bulletin = Bulletin::all();
+    return view('news_home',['bulletin'=>$bulletin]);
 })->name('news_home');
+
+
 
 // Bulletin
 Route::resource('bulletin', BulletinController::class);
@@ -78,5 +96,8 @@ Route::resource('news', NewsController::class);
 Route::get('/x', function () {
     return view('x');
 })->name('x');
+
+//make a route as a post 
+Route::post("/logout",[LogoutController::class,"store"])->name("logout");
 
 require __DIR__.'/auth.php';

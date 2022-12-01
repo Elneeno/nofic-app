@@ -12,7 +12,7 @@ class BulletinController extends Controller
     //
 
     public function index() {
-        //
+        // 
         
         $data = Bulletin::all();
         return view("bulletin", ["data"=>$data]);
@@ -67,8 +67,17 @@ class BulletinController extends Controller
 
     }
 
-    public function destroy() {
+    public function destroy($id) {
         //
 
+         $file = Bulletin::find($id);
+         Bulletin::findOrFail($id)->delete();
+         Storage::disk('public')->delete('bulletins/'.$file->pdf);
+
+          return redirect('bulletin')->with('message', 'Record deleted!');
+
+        //}else{
+            
+            return redirect('bulletin')->with('message', 'Record Not Found!');
     }
 }
