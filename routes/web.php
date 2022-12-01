@@ -20,8 +20,10 @@ use App\Models\Bulletin;
 |
 */
 Route::get('/', function () {
+
     $bulletin = Bulletin::all();
-    return view('index', ['bulletin'=>$bulletin]);
+    
+    return view('index', ['bulletin' => $bulletin]);
 })->name('home');
 
 
