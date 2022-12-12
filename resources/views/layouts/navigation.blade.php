@@ -14,11 +14,13 @@
               <li><a href="{{ route('news_home') }}">News</a></li>
                 <li><a href="{{ route('gallery') }}">Gallery</a></li>
               <li class="dropdown"><a href="#"><span>Bulletins</span> <i class="bi bi-chevron-right"></i></a>
-                @foreach($bulletin as $pub)
+                
                 <ul>
+                  @foreach($bulletin as $pub)
                   <li><a href="{{ asset('bulletins/'. $pub->pdf) }}" target="_blank">{{$pub->title}}</a> </li>
+                  @endforeach
                 </ul>
-                @endforeach
+                
               </li>
             </ul>
           </li>
