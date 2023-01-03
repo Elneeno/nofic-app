@@ -5,7 +5,7 @@
  <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-<h2>News</h2>
+<h2><strong>News</strong></h2>
         <div class="row gy-4">
 
           <div class="col-lg-6">

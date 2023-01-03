@@ -7,6 +7,7 @@ use App\Http\Controllers\BulletinController;
 use App\Http\Controllers\NewsController;
 
 use App\Models\Bulletin;
+use App\Models\News;
 
 
 /*
@@ -21,7 +22,9 @@ use App\Models\Bulletin;
 */
 Route::get('/', function () {
     $bulletin = Bulletin::all();
-    return view('index', ['bulletin'=>$bulletin]);
+
+    $news = News::all()->take(3);
+    return view('index', ['bulletin'=>$bulletin,'news'=>$news]);
 })->name('home');
 
 
@@ -47,7 +50,9 @@ Route::get('/gallery', function () {
 
 Route::get('/news', function () {
     $bulletin = Bulletin::all();
-    return view('news',['bulletin'=>$bulletin]);
+
+    $news = News::all();
+    return view('news',['bulletin'=>$bulletin,'news' => $news]);
 })->name('news');
 
 Route::get('/news_item', function () {
@@ -83,7 +88,8 @@ Route::get('/news_insert', function () {
 
 Route::get('/news_home', function () {
     $bulletin = Bulletin::all();
-    return view('news_home',['bulletin'=>$bulletin]);
+    $news = News::all();
+    return view('news_home',['bulletin'=>$bulletin,'news' => $news]);
 })->name('news_home');
 
 

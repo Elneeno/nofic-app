@@ -185,30 +185,16 @@
       <h2>News</h2>
     </div>
         <div class="row no-gutters">
+      @foreach ($news as $item)
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
-              <div class="icon"><img src="img/slide/slide.jpg" alt="" class="img-fluid"></div>
-              <h4 class="title"><a href="">The managing director met with members of staff</a></h4>
-              <p class="description">She met with the staff of the centre</p>
-              <a href="{{ route('news_item') }}">More...</a>
+              <div class="icon"><img src="{{ url('storage/news_images/thumbnail/'.$item->image) }}" alt="" class="img-fluid"></div>
+              <h4 class="title"><a href="{{ route('view_news', ['id' => $item->id]); }}">{{ $item->title }}</a></h4>
+              <p class="description">{{date('d M, Y', strtotime($item->date))}}</p>
+              <a href="{{route('news.show', $item->id) }}">More...</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box">
-              <div class="icon"><img src="img/slide/slide.jpg" alt="" class="img-fluid"></div>
-              <h4 class="title"><a href="">The managing director met with members of staff</a></h4>
-              <p class="description">She met with the staff of the centre</p>
-              <a href="{{ route('news_item') }}">More...</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box">
-              <div class="icon"><img src="img/slide/slide.jpg" alt="" class="img-fluid"></div>
-              <h4 class="title"><a href="">The managing diresctor met with members of staff</a></h4>
-              <p class="description">She met with the staff of the centre</p>
-              <a href="{{ route('news_item') }}">More...</a>
-            </div>
-          </div>
+      @endforeach
         </div>
 
       </div>

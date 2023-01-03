@@ -139,6 +139,18 @@ class NewsController extends Controller
     public function destroy($id)
     {
         //
+         $file = News::find($id);
+        
+       // if(Storage::disk('public')->exists('news_images/'.$file->image)){
+           
+            Storage::disk('public')->delete('news_images/'.$file->image);
+            
+            News::findOrFail($id)->delete();
+            return redirect('news')->with('message', 'Record deleted!');
+
+        //}else{
+            
+            return redirect('news')->with('message', 'Record Not Found!');
         
     }
 }
