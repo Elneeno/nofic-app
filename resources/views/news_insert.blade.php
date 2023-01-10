@@ -34,7 +34,7 @@
 
               <div class="form-group mt-3">
                 <label for="name">News Content</label>
-                <textarea class="form-control" name="news_content" rows="10" required></textarea>
+                <textarea class="form-control summernote" id="summernote" name="news_content" rows="10" required></textarea>
               </div>
               <div class="form-group mt-3">
                 <label for="name">Pictures (Choose Multiple)</label>
