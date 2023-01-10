@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- ======= News Section ======= -->
-    <section id="featured-services" class="featured-services section-bg">
+   <section id="featured-services" class="featured-services section-bg">
       <div class="container">
         <div class="section-title">
            <h2>News Home</h2>
@@ -12,8 +12,8 @@
      @foreach ($news as $item)
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
-              <div class="icon"><img src="{{ url('uploads/news_images/'.$item->image) }}" alt="" class="img-fluid"></div>
-              <h4 class="title"><a href="{{ route('view_news', ['id' => $item->id]); }}">{{ $item->title }}</a></h4>
+              <div class="icon"><img src="{{ asset('news_images/'.$item ->image) }}" alt="" class="img-fluid"></div>
+              <h4 class="title"><a href="{{route('news.show', $item->id) }}"> {{$item->title}} </a></h4>
               <p class="description">{{date('d M, Y', strtotime($item->date))}}</p>
               <a href="{{route('news.show', $item->id) }}">More...</a>
             </div>
