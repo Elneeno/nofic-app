@@ -187,7 +187,7 @@
         <div class="row no-gutters">
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
-              <div class="icon"><img src="img/slide/slide.jpg" alt="" class="img-fluid"></div>
+              <div class="icon"><img src="{{asset('/assets/img/slide/slide.jpg')}}" alt="" class="img-fluid"></div>
               <h4 class="title"><a href="">The managing director met with members of staff</a></h4>
               <p class="description">She met with the staff of the centre</p>
               <a href="{{ route('news_item') }}">More...</a>
